@@ -52,7 +52,6 @@ public class Auto extends Fahrzeug{
         super(reifen, farbe, ps, tueren, geschwindigkeit);
         this.klimaanlage = klimaanlage;
         this.airbags = airbags;
-        gestartet = false;
         this.klimaanlage = false;
         geschwindigkeit = 0;
         anzahl++;

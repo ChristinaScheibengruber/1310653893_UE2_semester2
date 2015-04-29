@@ -17,8 +17,8 @@ public class Fahrzeug implements Comparable{
     private color farbe;
     private short ps;
     private short tueren;
-    boolean gestartet;
-    short geschwindigkeit;
+    private boolean gestartet;
+    private short geschwindigkeit;
     public static int anzahl;
     
     public enum color {
