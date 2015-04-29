@@ -14,16 +14,20 @@ import static javax.swing.UIManager.get;
  */
 public class Fahrzeug implements Comparable{
     private short reifen;
-    private Color farbe;
-    short ps;
+    private color farbe;
+    private short ps;
     private short tueren;
     boolean gestartet;
     short geschwindigkeit;
     public static int anzahl;
     
-    public Fahrzeug (short reifen, Color farbe, short ps, short tueren, short geschwindigkeit){
+    public enum color {
+        Silver, red, Red, Black, Blue, White;
+    }
+    
+    public Fahrzeug (short reifen, color farbe, short ps, short tueren, short geschwindigkeit){
         this.reifen = reifen;
-        this.farbe = Color.BLUE;
+        this.farbe = color.Blue;
         this.ps = ps;
         this.tueren = tueren;
         this.gestartet = gestartet;
@@ -64,7 +68,7 @@ public class Fahrzeug implements Comparable{
     }
 
     public void setFarbe(String farbe) {
-        this.farbe = Color.BLUE;
+        this.farbe = color.Blue;
     }
 
     public void setPs(short ps) {
@@ -91,7 +95,7 @@ public class Fahrzeug implements Comparable{
         return reifen;
     }
 
-    public Color getFarbe() {
+    public color getFarbe() {
         return farbe;
     }
 

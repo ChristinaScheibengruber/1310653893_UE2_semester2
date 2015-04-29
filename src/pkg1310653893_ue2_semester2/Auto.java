@@ -47,17 +47,22 @@ public class Auto extends Fahrzeug{
        }
    }
    
-   public Auto (boolean klimaanlage, short airbags, short reifen, Color farbe, int ps, short tueren, boolean gestartet, short geschwindigkeit) {
-       super(reifen, farbe, tueren, tueren, geschwindigkeit);
-       gestartet = false;
-       klimaanlage = false;
-       geschwindigkeit = 0;
-       anzahl++;
-   }
+
+    public Auto(boolean klimaanlage, short airbags, short reifen, color farbe, short ps, short tueren, short geschwindigkeit) {
+        super(reifen, farbe, ps, tueren, geschwindigkeit);
+        this.klimaanlage = klimaanlage;
+        this.airbags = airbags;
+        gestartet = false;
+        this.klimaanlage = false;
+        geschwindigkeit = 0;
+        anzahl++;
+    }
+
+    
 
     @Override
     public String toString() {
-        return "Mein Auto hat" + get(ps) + "und fährt mit " + get(geschwindigkeit); //To change body of generated methods, choose Tools | Templates.
+        return "Mein Auto hat" + getPs() + "und fährt mit " + getGeschwindigkeit(); //To change body of generated methods, choose Tools | Templates.
     }
    
    
