@@ -5,8 +5,6 @@
  */
 package pkg1310653893_ue2_semester2;
 
-import java.awt.Color;
-import static javax.swing.UIManager.get;
 
 /**
  *
@@ -30,7 +28,6 @@ public class Fahrzeug implements Comparable{
         this.farbe = color.Blue;
         this.ps = ps;
         this.tueren = tueren;
-        this.gestartet = gestartet;
         this.geschwindigkeit = geschwindigkeit;
     }
     public void starten(){
@@ -42,21 +39,15 @@ public class Fahrzeug implements Comparable{
     }
     
     public void beschleunigen(short geschwindigkeit) {
-        if (gestartet = true) {
+        if (gestartet == true && geschwindigkeit <= 250) {
         this.geschwindigkeit+= geschwindigkeit;
-            if (geschwindigkeit > 250) {
-                geschwindigkeit = 250;
-            }
                 
         }
     }
     
     public void bremsen(short geschwindigkeit){
-        if (gestartet = true) {
+        if (gestartet == true && geschwindigkeit >= 0) {
             this.geschwindigkeit-= geschwindigkeit;
-            if (geschwindigkeit < 0) {
-                geschwindigkeit = 0;
-            }
             }
         }
     

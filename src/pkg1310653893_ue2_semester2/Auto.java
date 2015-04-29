@@ -5,9 +5,7 @@
  */
 package pkg1310653893_ue2_semester2;
 
-import java.awt.Color;
 import javax.swing.JOptionPane;
-import static javax.swing.UIManager.get;
 
 /**
  *
@@ -19,7 +17,7 @@ public class Auto extends Fahrzeug{
    
    public void klimaanlageAn() {
        this.klimaanlage = true;
-       if(this.klimaanlage = false) {
+       if(this.klimaanlage == false) {
            JOptionPane.showInputDialog("Klimaanlage läuft bereits");
        }
    }
@@ -42,7 +40,7 @@ public class Auto extends Fahrzeug{
    
    public void klimaanlageAus() {
        this.klimaanlage = false;
-       if(this.klimaanlage = true) {
+       if(this.klimaanlage == true) {
            JOptionPane.showInputDialog("Klimaanlage bereits aus");
        }
    }
