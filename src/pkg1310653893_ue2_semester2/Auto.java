@@ -5,6 +5,7 @@
  */
 package pkg1310653893_ue2_semester2;
 
+import java.awt.Color;
 import javax.swing.JOptionPane;
 import static javax.swing.UIManager.get;
 
@@ -46,7 +47,7 @@ public class Auto extends Fahrzeug{
        }
    }
    
-   public Auto (boolean klimaanlage, short airbags, short reifen, String farbe, int ps, short tueren, boolean gestartet, short geschwindigkeit) {
+   public Auto (boolean klimaanlage, short airbags, short reifen, Color farbe, int ps, short tueren, boolean gestartet, short geschwindigkeit) {
        super(reifen, farbe, tueren, tueren, geschwindigkeit);
        gestartet = false;
        klimaanlage = false;

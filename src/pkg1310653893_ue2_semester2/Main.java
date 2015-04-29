@@ -5,6 +5,7 @@
  */
 package pkg1310653893_ue2_semester2;
 
+import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -23,11 +24,11 @@ public class Main {
     Mensch andrea = new Mensch("Andrea", 48, "weiblich");
     Mensch2 christina = new Mensch2 ("christina", "scheibengruber", 21);
     Student christinaScheibengruber = new Student (1310653893, "Web Business & Technology", "christina", "scheibengruber", 21);
-    Auto audi = new Auto(true, (short) 2, (short) 4, "schwarz", 270, (short) 4, true, (short) 50);
-    Auto bmw = new Auto(false, (short) 4, (short) 4, "blau", 230, (short) 4, true, (short) 70);
-    Auto audi2 = new Auto(true, (short) 2, (short) 4, "rot", 170, (short) 4, false, (short) 60);
-    Auto audi3 = new Auto(true, (short) 2, (short) 4, "weiß", 400, (short) 4, false, (short) 100);
-    Auto audi4 = new Auto(true, (short) 4, (short) 4, "grün", 150, (short) 4, false, (short) 90);
+    Auto audi = new Auto(true, (short) 2, (short) 4, Color.BLACK, 270, (short) 4, true, (short) 50);
+    Auto bmw = new Auto(false, (short) 4, (short) 4, Color.BLUE, 230, (short) 4, true, (short) 70);
+    Auto audi2 = new Auto(true, (short) 2, (short) 4, Color.PINK, 170, (short) 4, false, (short) 60);
+    Auto audi3 = new Auto(true, (short) 2, (short) 4, Color.YELLOW, 400, (short) 4, false, (short) 100);
+    Auto audi4 = new Auto(true, (short) 4, (short) 4, Color.GREEN, 150, (short) 4, false, (short) 90);
     
     audi.compareTo(bmw);
     List<Auto> liste = new ArrayList<>();

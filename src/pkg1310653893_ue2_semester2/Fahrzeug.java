@@ -5,6 +5,7 @@
  */
 package pkg1310653893_ue2_semester2;
 
+import java.awt.Color;
 import static javax.swing.UIManager.get;
 
 /**
@@ -13,16 +14,16 @@ import static javax.swing.UIManager.get;
  */
 public class Fahrzeug implements Comparable{
     private short reifen;
-    private String farbe;
+    private Color farbe;
     short ps;
     private short tueren;
-     boolean gestartet;
-     short geschwindigkeit;
+    boolean gestartet;
+    short geschwindigkeit;
     public static int anzahl;
     
-    public Fahrzeug (short reifen, String farbe, short ps, short tueren, short geschwindigkeit){
+    public Fahrzeug (short reifen, Color farbe, short ps, short tueren, short geschwindigkeit){
         this.reifen = reifen;
-        this.farbe = farbe;
+        this.farbe = Color.BLUE;
         this.ps = ps;
         this.tueren = tueren;
         this.gestartet = gestartet;
@@ -63,7 +64,7 @@ public class Fahrzeug implements Comparable{
     }
 
     public void setFarbe(String farbe) {
-        this.farbe = farbe;
+        this.farbe = Color.BLUE;
     }
 
     public void setPs(short ps) {
@@ -90,7 +91,7 @@ public class Fahrzeug implements Comparable{
         return reifen;
     }
 
-    public String getFarbe() {
+    public Color getFarbe() {
         return farbe;
     }
 
