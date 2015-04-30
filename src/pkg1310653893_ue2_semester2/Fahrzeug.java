@@ -20,7 +20,7 @@ public class Fahrzeug implements Comparable{
     public static int anzahl;
     
     public enum color {
-        Silver, red, Red, Black, Blue, White;
+        Silver, Red, Black, Blue, White;
     }
     
     public Fahrzeug (short reifen, color farbe, short ps, short tueren, short geschwindigkeit){
